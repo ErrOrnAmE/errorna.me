@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Lost in Warehouse</title>
+		<meta property="og:title" content="Lost in Warehouse" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://errorna.me/lost_in_warehouse/" />
+		<meta property="og:image" content="http://errorna.me/lost_in_warehouse/img/logo_ogp.png" />
+		<meta property="og:description" content="Lost in Warehouse is a puzzle-game in an isometric world where you control a robot inside a warehouse. The goal of each level is to carry a package to the end of the level. You will open doors, push boxes, trigger slides and get teleported in order to accomplish your ultimate mission: Delivering the package to the client." />
+		<meta charset="utf-8">
+		<link href="//fonts.googleapis.com/css?family=IM+Fell+English:400,400italic|Product+Sans" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="libs/lightbox/lightbox.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="head_wrap">
+					<div class="title">
+						<a onclick="content('the_game',0)">
+							<h3 style="margin-left: 20px">Lost in</h3>
+							<h3 style="font-size: 30px">Warehouse</h3>
+						</a>
+					</div>
+					<span class="quote">Countless packages. One robot.</span>
+					<!-- This link does nothing... For now... -->
+					<a href="#shop" id="cart" class="cart" title="View your items" onclick="content('shop');">
+						<div>
+							<img src="img/cart.png" alt="Shopping Cart"/>
+							<h4><span id="nb_items">0/8</span> items</h4>
+						</div>
+					</a>
+				</div>
+			</header>
+			<div id="menu">
+				<ul>
+					<li><a href="#the_game" onclick="content('the_game')" class="active">The Game</a></li>
+					<li><a href="#overview" onclick="content('overview');">Overview</a></li>
+					<li><a href="#documentation" onclick="content('documentation');">Documentation</a></li>
+					<li><a href="#credits" onclick="content('credits');">Credits</a></li>
+				</ul>
+			</div>
+			<div id="content">
+
+				<div id="the_game_" style="display: block">
+					<h2>Play the game</h2>
+
+					<p><strong>Every second, 63 items are bought on Amazon.</strong><br/><br/>
+						You are a small robot in one of their warehouse and you have been given the task to deliver these packages to the customer.
+					</p>
+
+					<div id="game">
+					</div>
+
+					<h3>Version n°0.4.4</h3>
+				</div>
+
+				<div id="overview_" style="display: none">
+					<h2>Overview</h2>
+
+					<div>
+						<h3>GAMEPLAY</h3>
+						<p>Lost in Warehouse is a puzzle-game in an isometric world where you control a robot inside a warehouse. The goal of each level is to carry a package to the end of the level. You will open doors, push boxes, trigger slides and get teleported in order to accomplish your ultimate mission: Delivering the package to the client. At the end of each level, the player will be able to see what item he was carrying all along.</p>
+
+						<h3>INSPIRATION</h3>
+						<strong>Wall-E:</strong><br/>
+						<a href="img/walle.jpg" data-lightbox="walle" data-title="Wall-E poster">
+							<img src="img/walle.jpg" alt="Wall-E poster" title="Wall-E poster"  style="width:150px; height: auto;padding-top: 15px"/>
+						</a>
+						<div style="float: right; width: 630px; margin-left: 20px">
+							<p>The small robot you control have some similarities with Wall-E, the hero of the eponym movie by Pixar. Indeed, the robot looks like Wall-E and is also carrying stuff around.</p>
+							<a href="img/robot.png" data-lightbox="walle" data-title="Robot spritesheet">
+								<img src="img/robot.png" alt="Robot spritesheet" title="Robot spritesheet" style="float: right; margin-top: 20px; margin-right: 90px;"/>
+							</a>
+						</div>
+
+						<hr/>
+
+						<strong>Lost in Translation:</strong><br/>
+						<a href="img/lost_in_translation.jpg" data-lightbox="lost_in_translation" data-title="Lost in Translation poster">
+							<img src="img/lost_in_translation.jpg" alt="Lost in Translation poster" title="Lost in Translation poster" style="width:150px; height: auto; padding-top: 15px"/>
+						</a>
+						<div style="float: right; width: 630px; margin-left: 20px">
+							<p>Lost in Translation narrate the story of a faded movie star (Bill Murray) and a neglected young woman (Scarlett Johansson) who form an unlikely bond after crossing paths in Tokyo.</p>
+							<p>Realised by Sofia Coppola and featuring two great actors, this movie is one of my favorite and is the inspiration for the title of this game.</p>
+							<p><i>"You're probably just having a mid-life crisis. Did you buy a Porsche yet?"</i> - Charlotte (Scarlett Johansson)</p>
+						</div>
+
+						<hr/>
+
+						<strong>Pokémon:</strong><br/>
+						<a href="img/pokemon.jpg" data-lightbox="pokemon" data-title="Pokémon poster">
+							<img src="img/pokemon.jpg" alt="Pokémon poster" title="Pokémon poster" style="width:150px; height: auto; padding-top: 15px"/>
+						</a>
+						<div style="float: right; width: 630px; margin-left: 20px">
+							<p>Pokémon Gold is one of the first game I played in my childhood and one I still enjoy now. As such, it will always be a source of inspiration. For this game, I looked upon the puzzle featured in Pokémon Gold. I analyzed them to make my own levels.</p>
+							<a href="img/poke1.png" data-lightbox="pokemon" data-title="Pokémon puzzle 1">
+								<img src="img/poke1.png" alt="Pokémon puzzle 1" title="Pokémon puzzle 1" style="height: 140px; width: auto;"/>
+							</a>
+							<a href="img/poke2.png" data-lightbox="pokemon" data-title="Pokémon puzzle 2">
+								<img src="img/poke2.png" alt="Pokémon puzzle 2" title="Pokémon puzzle 2" style="height: 140px; width: auto;"/>
+							</a>
+							<a href="img/poke3.png" data-lightbox="pokemon" data-title="Pokémon puzzle 3">
+								<img src="img/poke3.png" alt="Pokémon puzzle 3" title="Pokémon puzzle 3" style="height: 140px; width: auto;"/>
+							</a>
+							<a href="img/poke4.png" data-lightbox="pokemon" data-title="Pokémon puzzle 4">
+								<img src="img/poke4.png" alt="Pokémon puzzle 4" title="Pokémon puzzle 4" style="height: 140px; width: auto;"/>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div id="documentation_" style="display: none">
+					<h2>Documentation</h2>
+
+					<div>
+						<h3>GAMEPLAY</h3>
+						<strong>The origin:</strong>
+						<p>During the first week of the HTML5 - Javascript module, I started looking into the possibilities <a href="http://phaser.io" target="_blank">Phaser</a> was offering. I ran into a plugin called <a href="http://rotates.org/phaser/iso/" target="_blank">Phaser Isometric plug-in</a> developed by <a href="https://github.com/lewster32" target="_blank">Lewis Lane</a>. Watching the examples alongside the plug-in, I began to imagine a puzzle game in an isometric-tiled map.</p>
+
+						<hr/>
+
+						<strong>The story:</strong>
+						<p>The game is located inside a big warehouse owned by a company named "Amazoon". You control a small robot which mission is to find a package and carry it to the end of the level to deliver it the client.</p>
+						<p>But, beware! This warehouse is more tricky than you think and you may end up going in circles.</p>
+
+						<hr/>
+
+						<strong>Intended goals:</strong>
+						<p>The primary goal for this game is to feel challenged by the "Puzzle" aspect of the game. I hope the player will stand for a moment and think about what is the level's solution. Also, as explained in the Overview page, the player will discover at the end of each level the object he was carrying. Each object will be humorous, therefore the game should make the player want to finish the level as soon as possible to discover the next item.</p>
+
+						<hr/>
+
+						<strong>Expected experience:</strong>
+						<p>The player should be thrilled and maybe have a laugh when discovering the item at the end of each level</p>
+
+						<h3>REALISATION</h3>
+						<p>This game was a 16 weeks project. The realisation went as follow:</p>
+
+						<strong>Week 1:</strong> Discovering Phaser & Phaser Isometric Plugin capabilities
+						<br/>
+						<strong>Week 2:</strong> Making a Proof Of Concept script with a box wandering in an isometric world
+						<br/>
+						<strong>Week 3:</strong> Developping a script to read a custom json map and create the level
+						<br/>
+						<strong>Week 4 & 5:</strong> Rendering smooth deplacement for the robot sprites
+						<br/>
+						<strong>Week 6:</strong> Adding gameplay elements: Triggers and Doors
+						<br/>
+						<strong>Week 7:</strong> Adding gameplay elements: Boosts and Boxes
+						<br/>
+						<strong>Week 8:</strong> Designing this website
+						<br/>
+						<strong>Week 9:</strong> Refactoring the quickly growing code and correcting multiple bugs
+						<br/>
+						<strong>Week 10:</strong> Making four real levels
+						<br/>
+						<strong>Week 11:</strong> Adding gameplay elements: Portals and Enemies
+						<br/>
+						<strong>Week 12:</strong> Developping the entire HUD
+						<br/>
+						<strong>Week 13:</strong> Adding musics and sound effects
+						<br/>
+						<strong>Week 14:</strong> Creating a script to enable cookie-based progress backup
+						<br/>
+						<strong>Week 15:</strong> Making four real levels
+						<br/>
+						<strong>Week 16:</strong> Correcting multiple bugs and adding some details
+					</div>
+				</div>
+
+				<div id="credits_" style="display: none">
+					<h2>Credits</h2>
+
+					<div>
+						<br/>
+						<strong>Game Designer & Developer:</strong> <a href="http://thibaudcourtoison.fr" target="_blank">Thibaud Courtoison</a>
+						<br/><br/>
+						<strong>Tiles & Sprites:</strong> <a href="http://opengameart.org/users/johann-c" target="_blank">JohannC</a>
+						<br/>
+						<strong>UI assets:</strong> <a href="https://twitter.com/CamTatz" target="_blank">Cameron Tatz</a> & <a href="http://www.kenney.nl/" target="_blank">Kenney</a>
+						<br/>
+						<strong>Phaser:</strong> <a href="http://phaser.io" target="_blank">Photon Storm Ltd.</a>
+						<br/>
+						<strong>Phaser Isometric plug-in:</strong> <a href="https://github.com/lewster32" target="_blank">Lewis Lane</a>
+						<br/>
+						<strong>Web icons:</strong> <a href="http://www.freepik.com" target="_blank">Freepik</a>
+						<br/>
+						<strong>Musics:</strong> <a href="http://www.jdbartist.net" target="_blank">JDB Artist</a>
+						<br/>
+						<strong>Sounds:</strong> <a href="http://www.kenney.nl/" target="_blank">Kenney</a>
+						<br/>
+						<strong>Items:</strong> Lalunelahaut
+						<br/>
+						<strong>Special thanks to Lalunelahaut for keeping me awake for the final stretch !</strong>
+					</div>
+					<br/>
+					<br/>
+					<h2>And thank YOU for playing this game :)</h2>
+				</div>
+
+				<div id="shop_" style="display: none">
+					<h2>Items you delivered:</h2>
+
+					<div class="div" id="items">
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div>
+					This awesome game has been created by <a href="http://thibaudcourtoison.fr" target="_blank">
+						Thibaud Courtoison
+					</a>
+				</div>
+			</footer>
+		</div>
+
+		<script src="libs/phaser.js"></script>
+		<script src="libs/phaser-plugin-isometric.js"></script>
+
+		<!-- Main script -->
+		<script src="game.js"></script>
+
+		<!-- States scripts -->
+		<script src="js/states/boot.js"></script>
+		<script src="js/states/preload.js"></script>
+		<script src="js/states/title.js"></script>
+		<script src="js/states/menu.js"></script>
+		<script src="js/states/level.js"></script>
+		<script src="js/states/win.js"></script>
+
+		<!-- Misc scripts -->
+		<script src="js/misc/jukebox.js"></script>
+		<script src="js/misc/progress.js"></script>
+
+		<!-- Classes scripts -->
+		<script src="js/classes/map.js"></script>
+		<script src="js/classes/player.js"></script>
+		<script src="js/classes/background.js"></script>
+		<script src="js/classes/floor.js"></script>
+		<script src="js/classes/wall.js"></script>
+		<script src="js/classes/trigger.js"></script>
+		<script src="js/classes/door.js"></script>
+		<script src="js/classes/boost.js"></script>
+		<script src="js/classes/portal.js"></script>
+		<script src="js/classes/woodbox.js"></script>
+		<script src="js/classes/laser.js"></script>
+		<script src="js/classes/enemy.js"></script>
+
+		<!-- Starting the game -->
+		<script>
+			game.state.start('Boot');
+		</script>
+
+		<!-- Load items from cookies -->
+		<script>
+
+			function loadItems() {
+				document.getElementById('items').innerHTML = '';
+
+				document.getElementById('nb_items').innerHTML = game.progress.owned_items.length+'/8';
+
+				for(var key in game.progress.owned_items) {
+					var text = game.progress.items[game.progress.owned_items[key]];
+					addItem(game.progress.owned_items[key],text,"Lalunelahaut")
+				}
+			}
+
+			function addItem(id,text,author) {
+				document.getElementById('items').innerHTML += '' +
+					'<div class="item">' +
+					'	<div class="image">' +
+					'		<img src="assets/items/'+id+'.jpg" alt="Item '+id+'">' +
+					'	</div>' +
+					'	<div class="text">' +
+					'		<span><strong>&ldquo;'+text+'&rdquo;</strong></span>' +
+					'	</div>' +
+					'	<div class="copyright">' +
+					'		<span style="float:right; padding-right: 10px">&copy; '+author+'</span>' +
+					'	</div>' +
+					'</div>'
+			}
+
+			game.progress.loadItems();
+			loadItems();
+
+			// Add loadItems(); to progress.js
+		</script>
+
+		<script type="text/javascript">
+			var cat = ['the_game','overview','documentation','credits','shop'];
+
+			function content(id,init) {
+
+				init = init || false;
+
+				var links = document.getElementById('menu').children[0].children;
+
+				for(var i = 0; i < cat.length; i++) {
+					if (i < 4) {
+						links[i].children[0].className='';
+					} else {
+						document.getElementById('cart').children[0].className='';
+					}
+					document.getElementById(cat[i]+'_').style.display="none";
+				}
+
+				var index = cat.indexOf(id);
+
+				document.getElementById(id+'_').style.display="block";
+
+				if (index < 4) {
+					links[index].children[0].className='active';
+				} else {
+					document.getElementById('cart').children[0].className='active';
+				}
+
+			}
+
+			function init() {
+				var init = cat.indexOf(location.hash.substr(1));
+				if (init >= 0)
+					content(location.hash.substr(1),true);
+			}
+
+			window.onhashchange = function() {
+				init();
+			}
+
+			init();
+		</script>
+
+		<script src="/libs/jquery-3.2.1.slim.min.js"></script>
+		<script src="libs/lightbox/lightbox.js"></script>
+
+	</body>
+</html>

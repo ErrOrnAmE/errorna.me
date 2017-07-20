@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Thibaud Courtoison</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="main">
+			<img id="title" src="title_en.png" alt="Title En"/>
+			<div id="intro">
+				<p id="tr0">
+					Hi ! My name is <b>Thibaud Courtoison</b>.<br/>
+					I am a french Computer Game Development student in Glasgow, Scotland.<br/>
+					The purpose of this interactive website is to get my resume.<br/>
+					<br/>
+					<!--I am currently looking for an internship in <b>Video Game Development</b>.<br/>-->
+					Feel free to contact me at <b>thibaud.courtoison@gmail.com</b> !<br/>
+					<br/>
+					There is two way to get my resume:<br/>
+				</p>
+			</div>
+			<div id="game" style="width: 350px; height: 0px;">
+				<a href="CV/" target="_blank" onmouseover="underline(this,true)" onmouseout="underline(this,false)">
+					<p id="tr1" class="text" style="font-size: 17px; margin-left: 75px;">
+						Play with my resume (Fun way)
+					</p>
+					<img class="icon" src="1.png" alt="1" style="position:relative;top: -60px;"/>
+					<img src="Game.png" alt="Play the Game!" style="position: relative; top: -60px;"/>
+				</a>
+			</div>
+			<div id="pdf" onmouseover="underline(this,true)" onmouseout="underline(this,false)">
+				<p id="tr2" style="font-size: 17px; margin-left: 75px;">
+					Download the pdf (Not-fun way)
+				</p>
+				<img class="icon" src="2.png" alt="2" style="position:relative;top: -60px;" />
+				<a href="Thibaud_Courtoison_CV_EN.pdf" target="_blank">
+					<div id="english">
+						<img src="english.png" alt="image of the english CV" style="position: relative; top: -60px;"/>
+					</div>
+				</a>
+				<a href="Thibaud_Courtoison_CV_FR.pdf" target="_blank">
+					<div id="french">
+						<img src="french.png" alt="image of the french CV" style="position: relative; top: -60px;"/>
+					</div>
+				</a>
+			</div>
+			<div id="credits">
+				<p id="tr4">
+					<b>Credits:</b><br/>
+					<span style="text-indent: 50px;">
+					Conception and Realization: Thibaud Courtoison<br/>
+					Game Engine: <a href="https://www.scirra.com/construct2">Construct 2</a><br/>
+					Graphics: <a href="http://kenney.nl/">Kenney</a><br/>
+					Icons:  <a href="http://www.freepik.com">Freepik</a> (<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>)<br/>
+					Fonts: <a href="http://www.vicfieger.com/">Vic Fieger</a>
+					</span>
+				</p>
+			</div>
+		</div>
+		<div id="flag">
+			<img src="english_flag.png" alt="English Flag" onclick="trans(false);"/>
+			<img src="french_flag.png" alt="French Flag" onclick="trans(true);"/>
+		</div>
+		<script type="text/javascript">
+			var userLang = navigator.language || navigator.userLanguage;
+			//alert (userLang.substr(0, 2));
+			var textEN = [
+				"Hi ! My name is <b>Thibaud Courtoison</b>.<br/>"
+				+"I am a french Computer Game Development student in Glasgow, Scotland.<br/>"
+				+"The purpose of this interactive website is to get my resume.<br/>"
+				+"<br/>"
+				//+"I am currently looking for an internship in <b>Video Game Development</b>.<br/>"
+				+"Feel free to contact me at <b>thibaud.courtoison@gmail.com</b> !<br/>"
+				+"<br/>"
+				+"There is two way to get my resume:<br/>",
+				"Play with my resume (Fun way)",
+				"Download the pdf (Not-fun way)",
+				"<b>Enjoyed it ? Share it !</b>",
+				'<b>Credits:</b><br/>'
+				+'<span style="text-indent: 50px;">'
+				+'Conception and Realization: Thibaud Courtoison<br/>'
+				+'Game Engine: <a href="https://www.scirra.com/construct2">Construct 2</a><br/>'
+				+'Graphics: <a href="http://kenney.nl/">Kenney</a><br/>'
+				+'Icons:  <a href="http://www.freepik.com">Freepik</a> (<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>)<br/>'
+				+'Fonts: <a href="http://www.vicfieger.com/">Vic Fieger</a>'
+				+'</span> '
+			];
+
+			var textFR = [
+				"Salut ! Je m'appelle <b>Thibaud Courtoison</b>.<br/>"
+				+"Je suis étudiant en Développement de Jeux Vidéo à Glasgow, en Écosse.<br/>"
+				+"L'objectif de ce site internet est de pouvoir obtenir mon CV.<br/>"
+				+"<br/>"
+				//+"Je recherche actuellement un stage dans le <b>développement de Jeux Vidéo</b>.<br/>"
+				+"N'hésitez pas à me contacter à l'adresse <b>thibaud.courtoison@gmail.com</b> !<br/>"
+				+"<br/>"
+				+"Il y a deux façons d'obtenir mon CV:<br/>",
+				"Jouez avec mon CV (Cool)",
+				"Téléchargez mon CV (Pas cool)",
+				"<b>Vous avez aimé ? Partagez !</b>",
+				'<b>Crédits:</b><br/>'
+				+'<span style="text-indent: 50px;">'
+				+'Conception and Realisation: Thibaud Courtoison<br/>'
+				+'Moteur de jeu: <a href="https://www.scirra.com/construct2">Construct 2</a><br/>'
+				+'Images: <a href="http://kenney.nl/">Kenney</a><br/>'
+				+'Icones:  <a href="http://www.freepik.com">Freepik</a> (<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>)<br/>'
+				+'Police de caractère: <a href="http://www.vicfieger.com/">Vic Fieger</a>'
+				+'</span> '
+			];
+
+			function trans(fr) {
+				if (!fr) {
+					for(var i=0; i < 5; i++) {
+						document.getElementById("tr"+i).innerHTML=textEN[i];
+					}
+				} else {
+					for(var i=0; i < 5; i++) {
+						document.getElementById("tr"+i).innerHTML=textFR[i];
+					}
+				}
+				return fr;
+			}
+
+			if(userLang.substr(0, 2)=="fr") {
+				trans(true);
+			}
+		</script>
+	</body>
+</html>
