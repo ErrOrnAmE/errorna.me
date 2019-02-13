@@ -1,0 +1,52 @@
+.event {
+  padding: 15px 10px 10px 10px;
+  display: flex;
+
+  .content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    flex: 1;
+
+    h3 {
+      font-size: 17px;
+      line-height: 17px;
+      font-weight: 400;
+      margin: 0 0 0 5px;
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      color: #aaa;
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      .location {
+        color: #666;
+        padding: 10px 0;
+      }
+
+      .website {
+        a {
+          border: 1px solid #999;
+          border-radius: 5px;
+          padding: 5px;
+
+          &:hover {
+            background-color: #999;
+            color: white;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

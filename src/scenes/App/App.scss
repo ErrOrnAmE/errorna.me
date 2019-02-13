@@ -1,0 +1,72 @@
+@import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/grid/columns.sass';
+
+body {
+  background-color: #f0f0f0;
+  font-family: Lato, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 135%;
+  margin: 0;
+  min-height: 100%;
+}
+
+a {
+  display: inline-block;
+  color: #aaa;
+  text-align: left;
+  text-decoration: none;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  padding: 0 10px;
+}
+
+.main {
+  padding: 30px 0 50px 0;
+
+  @media screen and (max-width: 768px) {
+    .columns:not(.is-home) .profile {
+      display: none;
+    }
+  }
+}
+
+.list-posts {
+  & > div + div {
+    margin-top: 1.8rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 3px;
+  background-color: #888;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+.grey-rule {
+  width: 90px;
+  height: 1px;
+  margin: 15px auto 15px 0;
+  background-color: #c7c7c7;
+}
