@@ -35,6 +35,7 @@ const Profile = ({ className }) => (
           target="_blank"
           rel="noopener noreferrer"
           className="github"
+          aria-label="Github profile"
         >
           <i className="fab fa-github-square fa-2x" />
         </a>
@@ -43,6 +44,7 @@ const Profile = ({ className }) => (
           target="_blank"
           rel="noopener noreferrer"
           className="twitter"
+          aria-label="Twitter profile"
         >
           <i className="fab fa-twitter-square fa-2x" />
         </a>
@@ -51,6 +53,7 @@ const Profile = ({ className }) => (
           target="_blank"
           rel="noopener noreferrer"
           className="linkedin"
+          aria-label="Linkedin profile"
         >
           <i className="fab fa-linkedin fa-2x" />
         </a>
@@ -59,6 +62,7 @@ const Profile = ({ className }) => (
           target="_blank"
           rel="noopener noreferrer"
           className="stackoverflow"
+          aria-label="Stack-Overflow profile"
         >
           <i className="fab fa-stack-overflow fa-2x" />
         </a>
@@ -67,6 +71,7 @@ const Profile = ({ className }) => (
           target="_blank"
           rel="noopener noreferrer"
           className="npm"
+          aria-label="NPM profile"
         >
           <i className="fab fa-npm fa-2x" />
         </a>

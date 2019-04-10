@@ -15,6 +15,7 @@ const PostPreview = ({
           to={href}
           external={external}
           className="image"
+          aria-label={`Link for article named "${title}"`}
           style={
             image
               ? {
