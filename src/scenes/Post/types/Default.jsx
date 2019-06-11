@@ -1,5 +1,16 @@
-import { markdown } from 'helpers'
+import React from 'react'
 
-const Default = ({ content }) => markdown.html(content)
+import { markdown } from 'helpers'
+import { contents } from 'data'
+
+const Default = ({ post: { slug, content } }) => {
+  const Content = contents[slug]
+
+  if (Content) {
+    return <Content />
+  }
+
+  return markdown.html(content)
+}
 
 export default Default

@@ -1,6 +1,7 @@
 import React from 'react'
 import format from 'date-fns/format'
 
+import { markdown } from 'helpers'
 import { Card, Link } from 'components'
 
 import './PostPreview.scss'
@@ -45,7 +46,7 @@ const PostPreview = ({
           </div>
         </div>
         <div className="content">
-          <p>{preview}</p>
+          {markdown.paragraph(preview)}
           <Link to={href} external={external}>
             Read more...
           </Link>

@@ -20,7 +20,7 @@ const Talk = ({ post: { abstract, events = [] } }) => {
 
   return (
     <>
-      <h2>Abstract</h2>
+      <h2 className="first-h2">Abstract</h2>
       {markdown.html(abstract)}
       <h2>Next events</h2>
       <div>

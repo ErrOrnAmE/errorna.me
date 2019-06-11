@@ -15,11 +15,13 @@ const Event = ({ event }) => (
         <div className="location">
           {markdown.emoji(':round_pushpin:')} {event.location}
         </div>
-        <div className="website">
-          <Link to={event.url} external={true}>
-            {markdown.emoji(':globe_with_meridians:')} Website
-          </Link>
-        </div>
+        {event.url && (
+          <div className="website">
+            <Link to={event.url} external={true}>
+              {markdown.emoji(':globe_with_meridians:')} Website
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   </div>

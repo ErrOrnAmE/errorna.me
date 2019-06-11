@@ -28,7 +28,11 @@ const Post = ({ match }) => {
               }
             : {}
         }
-      />
+      >
+        <Link to="/" className="back-button">
+          Back
+        </Link>
+      </div>
       <div className="post-content">
         <h1>{title}</h1>
         <div className="meta">
@@ -36,7 +40,7 @@ const Post = ({ match }) => {
           <div>|</div>
           <div className="categories">
             {categories.reduce((acc, cat) => {
-              if (acc.length) acc.push(<span key={'before-' + cat}>,</span>)
+              if (acc.length) acc.push(<span key={'before-' + cat}>, </span>)
               acc.push(
                 <Link to={`/category/${cat}`} key={cat}>
                   {cat}
@@ -48,10 +52,6 @@ const Post = ({ match }) => {
         </div>
         <div className="grey-rule" />
         <TypeRender post={post} />
-        {/*markdown.html(content)*/}
-        {/*content.split('\n').map(text => (
-          <p>{text}</p>
-        ))*/}
       </div>
     </Card>
   )

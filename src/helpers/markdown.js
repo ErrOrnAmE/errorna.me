@@ -35,6 +35,19 @@ class Markdown {
     )
   }
 
+  paragraph(text) {
+    text = this.emoji(text)
+    text = text.replace('[...]', '')
+
+    return (
+      <span
+        dangerouslySetInnerHTML={{
+          __html: this.showdown.makeHtml(text)
+        }}
+      />
+    )
+  }
+
   emoji(text) {
     let emoticons = {
       ':)': ':slightly_smiling_face:',

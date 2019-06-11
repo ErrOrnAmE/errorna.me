@@ -41,3 +41,5 @@ export const featuredPosts = posts.filter(p => p.featured).sort((a, b) => a.feat
 export const postsByCategory = cat => sortByDate(posts.filter(p => p.categories.includes(cat)))
 
 export const postBySlug = slug => posts.find(p => p.slug === slug)
+
+export { default as contents } from './contents'

@@ -10,6 +10,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 1px solid #ddd;
+
+    .back-button {
+      background-color: white;
+      color: black;
+      padding: 7px 15px;
+      border-radius: 5px 0;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
   }
 
   .post-content {
@@ -29,6 +38,17 @@
       font-size: 25px;
       line-height: 30px;
       font-weight: 400;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+
+      &:not(.first-h2)::before {
+        content: '* * *';
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
     }
 
     & > .meta {
@@ -50,6 +70,14 @@
       color: #999;
       text-align: center;
       font-style: italic;
+    }
+
+    p a {
+      color: #777;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
